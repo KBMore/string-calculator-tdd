@@ -3,3 +3,7 @@ const { add }  = require("../src/stringCalculate");
 test('it should return 0 for empty string', ()=>{
     expect(add("")).toBe(0);
 });
+
+test('it should return same number if it is a single number', ()=>{
+    expect(add("8")).toBe(8);
+});
