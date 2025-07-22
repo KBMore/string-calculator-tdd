@@ -7,3 +7,9 @@ test('it should return 0 for empty string', ()=>{
 test('it should return same number if it is a single number', ()=>{
     expect(add("8")).toBe(8);
 });
+
+test('it should return sum of two numbers', ()=>{
+    expect(add("4, 5")).toBe(9);
+});
+
+
