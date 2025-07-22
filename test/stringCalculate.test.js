@@ -12,4 +12,8 @@ test('it should return sum of two numbers', ()=>{
     expect(add("4, 5")).toBe(9);
 });
 
+test('it should return sum if all numbers', ()=>{
+    expect(add("2,4,6")).toBe(12);
+})
+
 
