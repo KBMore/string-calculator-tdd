@@ -14,6 +14,10 @@ test('it should return sum of two numbers', ()=>{
 
 test('it should return sum if all numbers', ()=>{
     expect(add("2,4,6")).toBe(12);
-})
+});
+
+test('it should handle new line between numbers',()=>{
+    expect(add("2\n4,3")).toBe(9);
+} )
 
 
