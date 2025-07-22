@@ -24,4 +24,8 @@ test('it should support delimeter', ()=>{
     expect(add("//;\n4;3")).toBe(7);
 });
 
+test('it should not allow negative numbers', ()=>{
+    expect(()=> add("-2, -3, -1")).toThrow('Negative numbers not allowed: -2,-3,-1')
+})
+
 

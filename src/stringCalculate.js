@@ -12,6 +12,12 @@
     numbers = numbers.replace(/\n/g,  delimeter);
     const nums = numbers.split(new RegExp(`[${delimeter}, \n]`)).map(Number);
 
+    const filterNegative = nums.filter(num=>num < 0);
+
+    if(filterNegative.length > 0){
+        throw new Error(`Negative numbers not allowed: ${filterNegative.join(",")}`);
+    }
+
     return nums.reduce((acc, num)=> acc + parseInt(num), 0);
 }
 
