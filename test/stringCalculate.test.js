@@ -18,6 +18,10 @@ test('it should return sum if all numbers', ()=>{
 
 test('it should handle new line between numbers',()=>{
     expect(add("2\n4,3")).toBe(9);
-} )
+});
+
+test('it should support delimeter', ()=>{
+    expect(add("//;\n4;3")).toBe(7);
+});
 
 
